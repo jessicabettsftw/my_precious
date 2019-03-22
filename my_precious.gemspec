@@ -6,11 +6,11 @@ require "my_precious/version"
 Gem::Specification.new do |spec|
   spec.name          = "my_precious"
   spec.version       = MyPrecious::VERSION
-  spec.authors       = ["<github username>"]
-  spec.email         = ["<github email address>"]
+  spec.authors       = ["jessicabettsftw", "crishanks"]
+  spec.email         = ["jessicaannbettsis@gmail.com", "crishanks12@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{"Lord of the Rings Programming Language".}
+  spec.description   = %q{"I wanted to make a fun programming language so I did it. It's all my own, my precious... Precious is a LOTR esoteric programming language translator. Precious uses lore keywords and english to create simple programming functionality."}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
