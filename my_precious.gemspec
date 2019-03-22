@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{"Lord of the Rings Programming Language".}
   spec.description   = %q{"I wanted to make a fun programming language so I did it. It's all my own, my precious... Precious is a LOTR esoteric programming language translator. Precious uses lore keywords and english to create simple programming functionality."}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/jessicabettsftw/my_precious"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-    spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata["source_code_uri"] = "https://github.com/jessicabettsftw/my_precious"
+    spec.metadata["changelog_uri"] = "https://jessicabettsftw.github.io/"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
