@@ -7,13 +7,13 @@ module MyPrecious
   # Your code goes here...
   class CLI < Thor
 
-    desc 'bring_forth FILE', 'creates a .precious FILE where users can write their LOTR code'
+    desc 'forge file_name', 'creates a .precious file where users can write their LOTR code'
     def forge(file_name)
       file = File.open(file_name + '.precious', 'w')
       puts "You have succesfully forged #{file_name}.precious"
     end
 
-    desc 'parse FILE', 'parse a .precious FILE and output the result'
+    desc 'bring_forth read file and writer file', 'parse a .precious read file and outputs the result to the writer file'
     def bring_forth(reader_file_name, writer_file_name)
       exts_are_valid = check_reader_and_writer_exts(reader_file_name, writer_file_name)
       if exts_are_valid
@@ -24,6 +24,7 @@ module MyPrecious
       end
     end
 
+    desc 'destroy file name', 'if a .precious file already exists, it will be destroyed'
     def destroy(file_name)
       if File.exist?(file_name)
         File.delete(file_name)
