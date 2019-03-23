@@ -1,6 +1,6 @@
 require 'thor'
 require 'my_precious/version'
-require 'parser.rb'
+require 'my_precious/parser'
 
 module MyPrecious
   class Error < StandardError; end
