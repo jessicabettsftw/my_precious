@@ -1,6 +1,6 @@
 require 'thor'
 require 'my_precious/version'
-require 'my_precious/parser_2'
+require 'my_precious/parser'
 
 module MyPrecious
   class Error < StandardError; end
@@ -8,19 +8,25 @@ module MyPrecious
   class CLI < Thor
 
     desc 'bring_forth FILE', 'creates a .precious FILE where users can write their LOTR code'
-    def bring_forth(file_name)
+    def forge(file_name)
       file = File.open(file_name + '.precious', 'w')
-      puts "You have succesfully brought forth #{file_name}.precious"
+      puts "You have succesfully forged #{file_name}.precious"
     end
 
     desc 'parse FILE', 'parse a .precious FILE and output the result'
-    def parse reader_file_name, writer_file_name
+    def bring_forth(reader_file_name, writer_file_name)
       exts_are_valid = check_reader_and_writer_exts(reader_file_name, writer_file_name)
       if exts_are_valid
         file = File.open(reader_file_name, 'r')
-        Parser2.parse_file file, writer_file_name
+        Parser.parse_file file, writer_file_name
         puts "You have successfully transcribed #{reader_file_name}.precious into #{writer_file_name}"
         file.close
+      end
+    end
+
+    def destroy(file_name)
+      if File.exist?(file_name)
+        File.delete(file_name)
       end
     end
 
