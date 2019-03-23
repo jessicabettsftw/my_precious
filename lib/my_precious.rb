@@ -10,7 +10,7 @@ module MyPrecious
     desc 'forge file_name', 'creates a .precious file where users can write their LOTR code'
     def forge(file_name)
       file = File.open(file_name + '.precious', 'w')
-      puts "You have succesfully forged #{file_name}.precious"
+      puts "#{file_name}.precious, one file to rule them all"
     end
 
     desc 'bring_forth read file and writer file', 'parse a .precious read file and outputs the result to the writer file'
@@ -19,7 +19,7 @@ module MyPrecious
       if exts_are_valid
         file = File.open(reader_file_name, 'r')
         Parser.parse_file file, writer_file_name
-        puts "You have successfully transcribed #{reader_file_name}.precious into #{writer_file_name}"
+        puts "#{reader_file_name} has been brought forth. It has been transcribed into #{writer_file_name}"
         file.close
       end
     end
@@ -28,6 +28,7 @@ module MyPrecious
     def destroy(file_name)
       if File.exist?(file_name)
         File.delete(file_name)
+        puts "It's done... It's over now. #{file_name} has been destroyed"
       end
     end
 
