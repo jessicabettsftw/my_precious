@@ -1,5 +1,6 @@
 require 'thor'
-require "my_precious/version"
+require 'my_precious/version'
+require 'parser.rb'
 
 module MyPrecious
   class Error < StandardError; end
@@ -14,7 +15,7 @@ module MyPrecious
 
     desc 'parse FILE', 'parse a .precious FILE and output the result'
     def parse input_file_name, output_file_name
-      file = File.open input_file_name
+      file = File.open(input_file_name, 'r')
       Parser.parse_file file, output_file_name
       puts "You have successfully transcribed tome.rb"
       file.close
