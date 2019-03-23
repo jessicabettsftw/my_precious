@@ -8,7 +8,7 @@ module MyPrecious
 
     desc 'bring_forth FILE', 'creates a .precious FILE where users can write their LOTR code'
     def bring_forth(filename)
-      file = File.open(filename + '.precious')
+      file = File.open(filename + '.precious', 'w')
       puts "You have succesfully brought forth tome.rb"
     end
 
