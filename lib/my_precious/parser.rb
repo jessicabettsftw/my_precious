@@ -1,7 +1,6 @@
 require 'pry'
 
 class Parser
-  WRITER_FILE = 'output.rb'
   # KEYWORDS
   PUT_KEYWORDS = ['bring forth the ring', 'says', 'screams', 'exclaims', 'sobbs', 'coughs']
   COMMENT_KEYWORDS = ['second breakfast', 'wear the ring']
@@ -35,15 +34,16 @@ class Parser
    {'/': DIVISION_KEYWORDS}, {'==': COMPARISON_KEYWORDS},
    {'if': CONDITION_KEYWORDS}, {'end': END_KEYWORDS}, {'true': TRUE_KEYWORDS}, {'false': FALSE_KEYWORDS}, {'while': LOOP_KEYWORDS}, {'>': GREATER_THAN_KEYWORDS}, {'<': LESS_THAN_KEYWORDS}]
 
-  def self.parse_file(file)
+  def self.parse_file(file, output_file_name)
     str = ""
+    writer_file_name = output_file_name
     file.each_with_index do |file, index|
       file.each_line do |line|
         line = parse_line(line, index)
         str << (line + "\n")
       end
     end
-    write(str)
+    write(str, writer_file_name)
   end
 
   def self.parse_line(line, index)
@@ -118,15 +118,6 @@ class Parser
     return line
   end
 
-  def self.write(str)
-    if File.exist?(WRITER_FILE)
-      writer_file = File.open(WRITER_FILE, 'a')
-    else
-      writer_file = File.open(WRITER_FILE, 'w')
-    end
-    writer_file.write(str + "\n")
-  end
-
   def self.purify(word)
     word = word.gsub(/[!@%&.?,]/,'') # get rid of special chars
   end
@@ -191,5 +182,9 @@ class Parser
     end
   end
 
+  def self.write(str, writer_file_name)
+    writer_file = File.open(writer_file_name, 'w')
+    writer_file.write(str)
+  end
 
 end
