@@ -129,7 +129,6 @@ class Parser
   def self.parse(line, keywords)
     keywords.each do |keyword|
       if line.include? keyword
-        puts keyword
         replacement = find_replacement(keywords)
         line = line.gsub(keyword, replacement)
       end
