@@ -7,8 +7,8 @@ module MyPrecious
   class CLI < Thor
 
     desc 'bring_forth FILE', 'creates a .precious FILE where users can write their LOTR code'
-    def bring_forth filename
-      file = File.open filename
+    def bring_forth(filename)
+      file = File.open(filename + '.precious')
       puts "You have succesfully brought forth tome.rb"
     end
 
