@@ -1,0 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'my_precious'
+require 'my_precious/cli'
+
+MyPrecious::CLI.start(ARGV)
