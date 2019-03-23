@@ -11,7 +11,7 @@ class Parser
   SUBTRACTION_KEYWORDS = ['leaves the fellowship', 'stabs', 'banishes', 'steals']
   MULTIPLICATION_KEYWORDS = ['gives aid to', 'procreates', 'bolsters']
   DIVISION_KEYWORDS = ['decapitates', 'dismembers']
-  COMPARISON_KEYWORDS = ['as', 'equal']
+  COMPARISON_KEYWORDS = ['same', 'equal']
   CONDITION_KEYWORDS = ['does', 'if', 'will']
   END_KEYWORDS = ['you shall not pass']
   TRUE_KEYWORDS = ['precious']

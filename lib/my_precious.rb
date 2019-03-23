@@ -1,6 +1,6 @@
 require 'thor'
 require 'my_precious/version'
-require 'my_precious/parser'
+require 'my_precious/parser_2'
 
 module MyPrecious
   class Error < StandardError; end
@@ -18,8 +18,8 @@ module MyPrecious
       exts_are_valid = check_reader_and_writer_exts(reader_file_name, writer_file_name)
       if exts_are_valid
         file = File.open(reader_file_name, 'r')
-        Parser.parse_file file, writer_file_name
-        puts "You have successfully transcribed #{reader_file_name}.precious into #{writer_file_name}.rb"
+        Parser2.parse_file file, writer_file_name
+        puts "You have successfully transcribed #{reader_file_name}.precious into #{writer_file_name}"
         file.close
       end
     end
