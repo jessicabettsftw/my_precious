@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jessicaannbettsis@gmail.com", "crishanks12@gmail.com"]
 
   spec.summary       = %q{"Lord of the Rings Programming Language".}
-  spec.description   = %q{"I wanted to make a fun programming language so I did it. It's all my own, my precious... Precious is a LOTR esoteric programming language translator. Precious uses lore keywords and english to create simple programming functionality."}
+  spec.description   = %q{"I wanted to make a fun programming language so I did. It's mine. My own. My Precious... Precious is a LOTR esoteric programming language translator. Precious uses lore keywords and english to create simple programming functionality."}
   spec.homepage      = "https://github.com/jessicabettsftw/my_precious"
   spec.license       = "MIT"
 
