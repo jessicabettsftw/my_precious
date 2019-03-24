@@ -9,7 +9,7 @@ Precious uses lore keywords and english to create simple programming functionali
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'precious'
+gem 'my_precious'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install precious
+    $ gem install my_precious
 
 ## Syntax:
 Welcome to the Fellowship!
