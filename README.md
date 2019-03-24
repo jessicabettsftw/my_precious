@@ -30,6 +30,16 @@ each piece of code you write in Precious must be written on its own new line in 
 
 now, in the words of Gandalf the Gray, “All we have to decide is what to do with the time that is given us.” 
 
+# terminal commands
+my_precious forge 'filename'
+my_precious bring_forth 'filename' 'output filename'
+
+forge: create an empty .precious file with the specified name that you gave it. You will write you Precious code here.
+bring_forth: 'filename' here is the same file you created with forge which will now be read and interpreted into Ruby code which is then written and outputted to 'output filename'
+
+![terminal commands](https://lh3.google.com/u/0/d/1TleoYUX46Bp_sJ-Jb777BLQjKI--7iDN=w2458-h1394-iv1 "Terminal Commands")
+
+
 # known bugs
 version 0.2.3 - the last character of the function name will be removed.
 
