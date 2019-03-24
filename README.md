@@ -30,6 +30,13 @@ each piece of code you write in Precious must be written on its own new line in 
 
 now, in the words of Gandalf the Gray, “All we have to decide is what to do with the time that is given us.” 
 
+# known bugs
+version 0.2.7 - the last character of the function name will be removed.
+
+`transcribe the book about Mordor with Nazgul, Frodo
+
+def mordo( nazgul, frodo )`
+
 # terminal commands
 my_precious forge 'filename'
 
@@ -64,13 +71,6 @@ valinor.rb
 [17:28:49] middle_earth
 // ♥ 
 ```
-
-# known bugs
-version 0.2.3 - the last character of the function name will be removed.
-
-`transcribe the book about Mordor with Nazgul, Frodo
-
-def mordo( nazgul, frodo )`
 
 # variables
 use capitols
