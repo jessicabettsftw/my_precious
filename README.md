@@ -68,24 +68,24 @@ valinor.rb
 # known bugs
 version 0.2.3 - the last character of the function name will be removed.
 
-`transcribe the book about Mordor with Nazgul, Frodo
-
-def mordo( nazgul, frodo )`
+```transcribe the book about Mordor with Nazgul, Frodo
+def mordo( nazgul, frodo )
+```
 
 # variables
 use capitols
 
-Frodo is 8 years old
+`Frodo is 8 years old`
 
 # strings
 use double quotes
 
-Frodo is "a hobbit"
+`Frodo is "a hobbit"`
 
 # integers
 write normally
 
-Orcs are 2 big
+`Orcs are 2 big`
 
 # commenting
 use the keywords: 'second breakfast', 'wear the ring'
