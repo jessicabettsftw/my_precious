@@ -32,11 +32,15 @@ now, in the words of Gandalf the Gray, “All we have to decide is what to do wi
 
 # terminal commands
 my_precious forge 'filename'
+
 my_precious bring_forth 'filename' 'output filename'
+
 my_precious destroy 'filename'
 
 forge: create an empty .precious file with the specified name that you gave it. You will write you Precious code here.
+
 bring_forth: 'filename' here is the same file you created with forge which will now be read and interpreted into Ruby code which is then written and outputted to 'output filename'
+
 destroy: 'filename' here refers to any existing file you would like to delete
 
 ```
