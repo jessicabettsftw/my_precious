@@ -1,7 +1,7 @@
 # Precious
 
 I wanted to make a fun programming language so I did it.
-It's all my own, my precious... Precious is a LOTR esoteric programming language translator.
+It's mine. My own. My precious... Precious is a LOTR esoteric programming language translator.
 Precious uses lore keywords and english to create simple programming functionality.
 
 ## Installation
@@ -32,13 +32,38 @@ now, in the words of Gandalf the Gray, “All we have to decide is what to do wi
 
 # terminal commands
 my_precious forge 'filename'
+
 my_precious bring_forth 'filename' 'output filename'
 
+my_precious destroy 'filename'
+
 forge: create an empty .precious file with the specified name that you gave it. You will write you Precious code here.
+
 bring_forth: 'filename' here is the same file you created with forge which will now be read and interpreted into Ruby code which is then written and outputted to 'output filename'
 
-![terminal commands](https://lh3.google.com/u/0/d/1TleoYUX46Bp_sJ-Jb777BLQjKI--7iDN=w2458-h1394-iv1 "Terminal Commands")
+destroy: 'filename' here refers to any existing file you would like to delete
 
+```
+// ♥ my_precious forge middle_earth
+middle_earth.precious, one file to rule them all
+[17:27:59] middle_earth
+// ♥ ls
+middle_earth.precious
+[17:28:08] middle_earth
+// ♥ my_precious bring_forth middle_earth.precious valinor.rb
+middle_earth.precious has been brought forth. It has been transcribed into valinor.rb
+[17:28:22] middle_earth
+// ♥ ls
+middle_earth.precious   valinor.rb
+[17:28:23] middle_earth
+// ♥ my_precious destroy middle_earth.precious
+It's done... It's over now. middle_earth.precious has been destroyed
+[17:28:44] middle_earth
+// ♥ ls
+valinor.rb
+[17:28:49] middle_earth
+// ♥ 
+```
 
 # known bugs
 version 0.2.3 - the last character of the function name will be removed.
