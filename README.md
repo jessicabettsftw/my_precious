@@ -122,81 +122,81 @@ use the keywords: 'runs out of lembas bread', 'lost' or 'hunted by orcs'
 # addition
 use the keywords: 'joins', 'and' or 'accompanies'
 
-Frodo joins the fellowship with a Nazgul
-Gollum and Frodo went inside mordor
+`Frodo joins the fellowship with a Nazgul`
+`Gollum and Frodo went inside mordor`
 
 # subtraction
 use the keywords: 'leaves the fellowship', 'stabs', 'banishes' or 'steals'
 
-Sam leaves the fellowship without telling Sam
-a Wraith accidentally stabs Sauron in the face at a really important business meeting
+`Sam leaves the fellowship without telling Sam`
+`a Wraith accidentally stabs Sauron in the face at a really important business meeting`
 
 # multiplication
 use the keywords: 'gives aid to', 'procreates' or 'bolsters'
 
-Arigorn bolsters Helmsdeep
+`Arigorn bolsters Helmsdeep`
 
 # division
 use the keywords: 'decapitates' or 'dismembers'
 
-Gimly dismembers Legolas
+`Gimly dismembers Legolas`
 
 # true
 use the keywords: 'precious'
 
-Legolas is precious
+`Legolas is precious`
 
-#negation
+# negation
 use keywords: 'not'
 
-the Balrog is not precious
+`the Balrog is not precious`
 
 # loops
 use the keywords: 'whilst' or 'during the journey'
 
-whilst Frodo climed as strong as he could, Saruman cried, nooo!!
+`whilst Frodo climed as strong as he could, Saruman cried, nooo!!`
 
 # comparisons
 use keywords: 'equal', 'same' or 'similar'
 
-Gollum can be the same as Smeagol
+`Gollum can be the same as Smeagol`
 
 # greater/less than
 use keywords: 'stronger than' or 'more' and 'weaker than' or 'less'
 
-Bilbo ate more tree food than Treebeard
+`Bilbo ate more tree food than Treebeard`
 
 # conditionals
 use keywords: 'does', 'if' or 'will'
 
-will Mary equal Pippin?
+`will Mary equal Pippin?`
 
 # end
 use keywords: 'you shall not pass'
 
-you shall not pass
+`you shall not pass`
 
-#defining a function
+# defining a function
 use keywords: 'transcribe' or 'tell a story'
 
-transcribe the book about Mordor
+`transcribe the book about Mordor`
 
-#calling a function
+# calling a function
 use keywords: "theyre taking the hobbits to"
 
-they are taking the hobbits to Mordor
+`they are taking the hobbits to Mordor`
 
-#establishing parameters
+# establishing parameters
 use keywords: 'with'
 
-they are taking the hobbits to Mordor with Nazgul, Frodo
+`they are taking the hobbits to Mordor with Nazgul, Frodo`
 
 everything after the keyword 'with' is a parameter. use a ',' or ' ' to separate parameters
 
-#class words
+# class words
 use keywords: 'chapter :'
 
-chapter : TheMines
+`chapter : TheMines`
 
 the format here is important. everything after the ':' will be considered a classname.
 classnames must be capitalized
