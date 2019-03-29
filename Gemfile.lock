@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    my_precious (0.2.7)
+    my_precious (0.2.8)
 
 GEM
   remote: https://rubygems.org/
