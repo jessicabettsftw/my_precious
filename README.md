@@ -37,7 +37,7 @@ my_precious bring_forth 'filename' 'output filename'
 
 my_precious destroy 'filename'
 
-forge: create an empty .precious file with the specified name that you gave it. You will write you Precious code here.
+forge: create an empty .precious file with the specified name that you gave it. Write your Precious code here.
 
 bring_forth: 'filename' here is the same file you created with forge which will now be read and interpreted into Ruby code which is then written and outputted to 'output filename'
 
